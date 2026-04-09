@@ -2,7 +2,7 @@ import DashboardImage from '../assets/Dashboard image 1.png'
 
 function Hero() {
   return (
-    <section id="home" className="bg-[#F5F6FA] py-16 sm:py-20">
+    <section id="home" className="bg-[#F5F6FA] pt-16 pb-8 sm:pt-20 sm:pb-8">
       <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
         <h1 className="text-3xl font-semibold leading-tight text-[#0F172A] sm:text-4xl lg:text-4xl">
           Get Paid Faster, Manage Funds Smarter, <br />
@@ -25,7 +25,7 @@ function Hero() {
             Learn more
           </a>
         </div>
-        <div className="mx-auto mt-8 w-full max-w-6xl">
+        <div className="mx-auto mt-4 w-full max-w-6xl">
           <img
             src={DashboardImage}
             alt="Budg8it dashboard preview"

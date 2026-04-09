@@ -1,4 +1,4 @@
-import DashboardImage from '../assets/Dashboard image.png'
+import DashboardImage from '../assets/Dashboard image 1.png'
 
 function Hero() {
   return (
@@ -25,7 +25,7 @@ function Hero() {
             Learn more
           </a>
         </div>
-        <div className="mx-auto mt-12 w-full max-w-6xl">
+        <div className="mx-auto mt-8 w-full max-w-6xl">
           <img
             src={DashboardImage}
             alt="Budg8it dashboard preview"

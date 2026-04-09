@@ -22,7 +22,7 @@ const steps = [
 function HowItWorks() {
   return (
     <div>
-      <h2 className="text-3xl font-bold text-[#0F172A]">How It Works</h2>
+      <h2 className="text-3xl font-semibold leading-tight text-[#0F172A] sm:text-4xl lg:text-4xl">How It Works</h2>
       <div className="mt-8 space-y-5">
         {steps.map((step) => (
           <div key={step.title} className="rounded-xl border border-slate-200 p-5 shadow-md">

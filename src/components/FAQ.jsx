@@ -28,7 +28,7 @@ function FAQ() {
 
   return (
     <div id="faqs">
-      <h2 className="text-3xl font-bold text-[#0F172A]">Frequently Asked Questions</h2>
+      <h2 className="text-3xl font-semibold leading-tight text-[#0F172A] sm:text-4xl lg:text-4xl">Frequently Asked Questions</h2>
       <div className="mt-8 space-y-3">
         {faqs.map((faq, index) => {
           const isOpen = activeIndex === index

@@ -49,7 +49,7 @@ function WaitlistForm() {
   return (
     <section id="waitlist" className="bg-[#F5F6FA] py-16 sm:py-20">
       <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-[#0F172A] sm:text-4xl">Get early access!</h2>
+        <h2 className="text-3xl font-semibold leading-tight text-[#0F172A] sm:text-4xl lg:text-4xl">Get early access!</h2>
         <div className="mt-5 flex justify-center">
           <div className="flex -space-x-3">
             <img

@@ -23,7 +23,7 @@ function Features() {
   return (
     <section id="features" className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-center text-3xl font-bold text-[#0F172A] sm:text-4xl">
+        <h2 className="text-center text-3xl font-semibold leading-tight text-[#0F172A] sm:text-4xl lg:text-4xl">
           Core Features
         </h2>
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

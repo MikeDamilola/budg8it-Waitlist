@@ -1,4 +1,7 @@
 import { useState } from 'react'
+import SmImag1 from '../assets/Sm Imag1.png'
+import SmImag2 from '../assets/Sm Imag2.png'
+import SmImag3 from '../assets/Sm Imag3.png'
 
 const initialValues = {
   name: '',
@@ -49,9 +52,21 @@ function WaitlistForm() {
         <h2 className="text-3xl font-bold text-[#0F172A] sm:text-4xl">Get early access!</h2>
         <div className="mt-5 flex justify-center">
           <div className="flex -space-x-3">
-            <span className="h-10 w-10 rounded-full border-2 border-white bg-sky-300" />
-            <span className="h-10 w-10 rounded-full border-2 border-white bg-indigo-300" />
-            <span className="h-10 w-10 rounded-full border-2 border-white bg-emerald-300" />
+            <img
+              src={SmImag1}
+              alt="Waitlist member 1"
+              className="h-10 w-10 rounded-full border-2 border-white object-cover"
+            />
+            <img
+              src={SmImag2}
+              alt="Waitlist member 2"
+              className="h-10 w-10 rounded-full border-2 border-white object-cover"
+            />
+            <img
+              src={SmImag3}
+              alt="Waitlist member 3"
+              className="h-10 w-10 rounded-full border-2 border-white object-cover"
+            />
           </div>
         </div>
         <p className="mx-auto mt-4 max-w-xl text-slate-600">

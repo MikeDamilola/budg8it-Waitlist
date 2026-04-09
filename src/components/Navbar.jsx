@@ -76,8 +76,7 @@ const Navbar = () => {
               }`}
               onClick={(event) => event.stopPropagation()}
             >
-              <div className="mb-5 flex items-center justify-between">
-                <p className="text-sm font-semibold text-[#0F172A]">Menu</p>
+              <div className="mb-5 flex justify-end">
                 <button
                   type="button"
                   onClick={() => setMenuOpen(false)}

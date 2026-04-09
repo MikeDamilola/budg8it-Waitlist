@@ -9,7 +9,7 @@ const initialValues = {
   interest: '',
 }
 
-function WaitlistForm() {
+function WaitlistForm({ onJoinWaitlist }) {
   const [values, setValues] = useState(initialValues)
   const [errors, setErrors] = useState({})
   const [submitted, setSubmitted] = useState(false)
@@ -123,7 +123,9 @@ function WaitlistForm() {
 
           <button
             type="button"
-            onClick={handleSubmit}
+            onClick={() => {
+              onJoinWaitlist()
+            }}
             className="w-full rounded-full bg-[#0F172A] px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
           >
             Join Waitlist ↗

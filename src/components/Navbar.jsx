@@ -10,7 +10,7 @@ const linkToHref = {
   'Contact Us': '#contact',
 }
 
-const Navbar = () => {
+const Navbar = ({ onJoinWaitlist }) => {
   const [activeLink, setActiveLink] = useState('Home')
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -47,6 +47,10 @@ const Navbar = () => {
 
             <a
               href="#waitlist"
+              onClick={(event) => {
+                event.preventDefault()
+                onJoinWaitlist()
+              }}
               className="hidden cursor-pointer items-center gap-1 rounded-full bg-[#0F172A] px-6 py-2.5 text-sm text-white transition-all duration-200 hover:opacity-90 md:inline-flex"
             >
               Join Waitlist
@@ -103,7 +107,11 @@ const Navbar = () => {
                 ))}
                 <a
                   href="#waitlist"
-                  onClick={() => setMenuOpen(false)}
+                  onClick={(event) => {
+                    event.preventDefault()
+                    setMenuOpen(false)
+                    onJoinWaitlist()
+                  }}
                   className="mt-2 inline-flex w-fit items-center gap-1 rounded-full bg-[#0F172A] px-6 py-2.5 text-sm text-white transition-all duration-200 hover:opacity-90"
                 >
                   Join Waitlist

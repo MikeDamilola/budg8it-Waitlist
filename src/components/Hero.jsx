@@ -1,6 +1,6 @@
 import DashboardImage from '../assets/Dashboard image 1.png'
 
-function Hero() {
+function Hero({ onJoinWaitlist }) {
   return (
     <section id="home" className="bg-[#F5F6FA] pt-16 pb-8 sm:pt-20 sm:pb-8">
       <div className="mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
@@ -14,6 +14,10 @@ function Hero() {
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
             href="#waitlist"
+            onClick={(event) => {
+              event.preventDefault()
+              onJoinWaitlist()
+            }}
             className="rounded-full bg-[#0F172A] px-7 py-3 text-sm font-semibold text-white shadow-md transition hover:bg-slate-800"
           >
             Join Waitlist ↗

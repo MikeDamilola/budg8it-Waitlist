@@ -2,12 +2,12 @@ import { useState } from 'react'
 import { ArrowUpRight, Menu, X } from 'lucide-react'
 import logo from '../assets/budg8it-logo.png'
 
-const links = ['Home', 'Features', 'Contact Us']
+const links = ['Home', 'How It Works', 'FAQs']
 
 const linkToHref = {
   Home: '#home',
-  Features: '#features',
-  'Contact Us': '#contact',
+  'How It Works': '#how-it-works',
+  FAQs: '#faqs',
 }
 
 const Navbar = ({ onJoinWaitlist }) => {
@@ -46,7 +46,7 @@ const Navbar = ({ onJoinWaitlist }) => {
             </nav>
 
             <a
-              href="#waitlist"
+              href="#home"
               onClick={(event) => {
                 event.preventDefault()
                 onJoinWaitlist()
@@ -106,7 +106,7 @@ const Navbar = ({ onJoinWaitlist }) => {
                   </a>
                 ))}
                 <a
-                  href="#waitlist"
+                  href="#home"
                   onClick={(event) => {
                     event.preventDefault()
                     setMenuOpen(false)

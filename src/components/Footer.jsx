@@ -1,10 +1,10 @@
-import logo from '../assets/budg8it-logo.png'
+import logo from '../assets/Budg8it.png'
 
 const quickLinks = [
   { label: 'Home', href: '#home' },
-  { label: 'Features', href: '#features' },
+  { label: 'How It Works', href: '#how-it-works' },
   { label: 'FAQs', href: '#faqs' },
-  { label: 'Join Waitlist', href: '#waitlist' },
+  { label: 'Join Waitlist', href: '#home' },
 ]
 
 function Footer() {
@@ -16,7 +16,7 @@ function Footer() {
             <img
               src={logo}
               alt="Budg8it logo"
-              className="h-10 w-auto max-w-[170px] rounded-md bg-white px-2 py-1 object-contain"
+              className="h-10 w-auto max-w-[170px] object-contain"
             />
           </div>
           <p className="mt-4 text-sm text-slate-300">

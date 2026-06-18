@@ -27,9 +27,12 @@ function FAQ() {
   const [activeIndex, setActiveIndex] = useState(0)
 
   return (
-    <div id="faqs">
-      <h2 className="text-3xl font-semibold leading-tight text-[#0F172A] sm:text-4xl lg:text-4xl">Frequently Asked Questions</h2>
-      <div className="mt-8 space-y-3">
+    <section id="faqs" className="bg-[#F5F6FA] py-16 sm:py-20">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <h2 className="text-center text-3xl font-semibold leading-tight text-[#0F172A] sm:text-4xl lg:text-4xl">
+          Frequently Asked Questions
+        </h2>
+        <div className="mt-8 space-y-3">
         {faqs.map((faq, index) => {
           const isOpen = activeIndex === index
           return (
@@ -46,8 +49,9 @@ function FAQ() {
             </article>
           )
         })}
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

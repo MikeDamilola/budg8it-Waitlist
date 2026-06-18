@@ -40,11 +40,11 @@ function Hero({ onJoinWaitlist }) {
           <img src={logo} alt="Budg8it" className="h-8 w-auto object-contain sm:h-9" />
         </div>
 
-        <div className="mt-10 inline-flex items-center rounded-full border border-gray-100 bg-white pr-6 shadow-sm sm:mt-12 lg:mt-14">
-          <span className="inline-flex items-center justify-center rounded-full bg-[#192250] px-5 py-2.5 text-sm font-bold tracking-widest text-white">
+        <div className="mt-10 inline-flex w-fit max-w-[calc(100vw-2rem)] items-center rounded-full border border-gray-100 bg-white pr-2.5 shadow-sm sm:mt-12 sm:pr-6 lg:mt-14">
+          <span className="inline-flex shrink-0 items-center justify-center rounded-full bg-[#192250] px-3 py-1.5 text-[10px] font-bold tracking-wide text-white sm:px-5 sm:py-2.5 sm:text-sm sm:tracking-widest">
             NEW
           </span>
-          <p className="ml-4 text-sm font-medium text-[#0a1628]">
+          <p className="ml-2 whitespace-nowrap text-[clamp(0.5625rem,2.55vw,0.875rem)] font-medium leading-none text-[#0a1628] sm:ml-4 sm:text-sm sm:leading-normal">
             Your all-in-one budget app for payment and savings.
           </p>
         </div>

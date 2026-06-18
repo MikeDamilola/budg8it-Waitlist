@@ -36,8 +36,8 @@ function Hero({ onJoinWaitlist }) {
       />
 
       <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center px-4 pb-0 pt-4 text-center sm:px-6 sm:pt-5 lg:px-8">
-        <div className="rounded-full bg-white px-6 py-2.5 shadow-md sm:px-7 sm:py-3">
-          <img src={logo} alt="Budg8it" className="h-8 w-auto object-contain sm:h-9" />
+        <div className="rounded-full bg-white px-3.5 py-1.5 shadow-md sm:px-7 sm:py-3">
+          <img src={logo} alt="Budg8it" className="h-6 w-auto object-contain sm:h-9" />
         </div>
 
         <div className="mt-10 inline-flex w-fit max-w-[calc(100vw-2rem)] items-center rounded-full border border-gray-100 bg-white pr-2.5 shadow-sm sm:mt-12 sm:pr-6 lg:mt-14">
